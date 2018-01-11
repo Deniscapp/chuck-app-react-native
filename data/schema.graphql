@@ -1,0 +1,17 @@
+schema {
+  query: RootQueryType
+}
+
+type Fact {
+  id: String
+  url: String
+  value: String
+  icon_url: String
+  category: [String]
+}
+
+type RootQueryType {
+  fact(text: String): [Fact]
+  categories: [String]
+  category(name: String): Fact
+}
