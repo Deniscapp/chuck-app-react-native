@@ -7,14 +7,18 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-relay": "^1.4.1"
   },
   "devDependencies": {
     "babel-jest": "22.0.6",
+    "babel-plugin-relay": "^1.4.1",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.0.6",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "relay-compiler": "^1.4.1"
   },
   "jest": {
     "preset": "react-native"
