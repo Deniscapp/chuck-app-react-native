@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "relay": "relay-compiler --src ./src --schema data/schema.graphql",
     "test": "jest"
   },
   "dependencies": {
