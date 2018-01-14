@@ -20,7 +20,6 @@ class ChuckIntro extends Component {
           }
         `}
         render={({ error, props }) => {
-            
           if (error) {
             console.log(error);
             return (
@@ -32,26 +31,8 @@ class ChuckIntro extends Component {
             const { categories } = props;
             return (
               <View>
-                    <ChuckMain
-                      categories={categories}
-                    />
-              <ScrollView>
-                
-                {/* <List>
-                  {fact.map((item, i) => (
-                    <ListItem
-                      roundAvatar
-                      key={i}
-                      title="True fact about Chuck Norris"
-                      subtitle={
-                        <View style={styles.subtitleView}>
-                          <Text style={styles.ratingText}>{item.value}</Text>
-                        </View>
-                      }
-                      avatar={item.icon_url}
-                    />
-                  ))}
-                </List> */}
+                <ScrollView>
+                <ChuckMain categories={categories} />
               </ScrollView>
             </View>
             );
@@ -68,20 +49,6 @@ class ChuckIntro extends Component {
   }
 }
 
-styles = StyleSheet.create({
-    subtitleView: {
-      flexDirection: 'row',
-      paddingLeft: 10,
-      paddingTop: 5
-    },
-    ratingImage: {
-      height: 19.21,
-      width: 100
-    },
-    ratingText: {
-      paddingLeft: 10,
-      color: 'grey'
-    }
-  })
+
 
 export default ChuckIntro;
