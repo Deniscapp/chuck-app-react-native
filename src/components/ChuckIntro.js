@@ -7,6 +7,9 @@ import { List, ListItem } from "react-native-elements";
 import ChuckMain from "./ChuckMain";
 
 class ChuckIntro extends Component {
+  static navigationOptions = {
+    title: 'Chuck Facts',
+  };
   render() {
     return (
       <QueryRenderer
